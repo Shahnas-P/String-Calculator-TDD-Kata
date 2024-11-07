@@ -19,6 +19,9 @@ describe("Create String Calculator",()=>{
         expect(add("//;\n1;2")).toBe(3)
     })
     it("should throw an exception for negative numbers",()=>{
-        expect(()=>add('-1 3 4')).toThrow(`negative numbers not allowed: ${-1}`)
+        expect(()=>add('-1 ,3 ,4')).toThrow(`negative numbers not allowed: ${-1}`)
+    })
+    it("Should throw an exception for negative numbers, listing all of them in the message, separated by commas",()=>{
+        expect(()=>add('-1,-4,3')).toThrow('negative numbers not allowed: -1, -4')
     })
 })
