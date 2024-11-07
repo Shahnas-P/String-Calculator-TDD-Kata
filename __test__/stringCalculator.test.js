@@ -18,4 +18,7 @@ describe("Create String Calculator",()=>{
     it("should support different delimiters",()=>{
         expect(add("//;\n1;2")).toBe(3)
     })
+    it("should throw an exception for negative numbers",()=>{
+        expect(()=>add('-1 3 4')).toThrow(`negative numbers not allowed: ${-1}`)
+    })
 })
