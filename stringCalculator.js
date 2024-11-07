@@ -1,7 +1,9 @@
+ 
  const add  = (number)=>{
 if(number ==='')return 0
-return parseInt(number)
-
+let sum = 0;
+const numArray= number.split(',')
+numArray.forEach((element)=>sum+=parseInt(element))
+return sum
 }
-
-module.exports = add
+export default add
