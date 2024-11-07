@@ -1,11 +1,12 @@
 {
   "name": "string-calculator-tdd-kata",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "jest",
-    " watch--test": "jest --watch"
+    "watch-test": "jest --watch"
   },
   "author": "",
   "license": "ISC",
